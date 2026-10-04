@@ -10,14 +10,17 @@ body {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 44px;
     text-align: center;
     color: #172554;
     margin-top: 36px;
+    margin-bottom: 15px;
     font-weight: 700;
     letter-spacing: 1px;
+    background: linear-gradient(90deg, #1e3a8a, #7e22ce, #db2777);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
 nav {
     position: sticky;
     top: 0;
@@ -41,14 +44,15 @@ nav a {
 }
 
 nav a:hover {
-    color: #2563eb;
-    
+    color: #7e22ce;
     transform: translateY(-2px);
+    text-shadow: 0 2px 8px rgba(126, 34, 206, 0.25);
 }
 
 .container {
     max-width: 900px;
     margin: 40px auto;
+    position: relative;
 }
 
 .card {
@@ -134,7 +138,14 @@ footer {
     height: 150px;
     border-radius: 50%;
     border: 4px solid #1e3a8a;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 18px rgba(126, 34, 206, 0.25),
+            0 0 0 6px rgba(255, 255, 255, 0.6);
+}
+/* Hero section */
+#home {
+    background: linear-gradient(135deg, #eef2ff, #fdf2f8, #ecfeff);
+    padding: 35px;
+    border-radius: 25px;
 }
 .card a {
     color: #2563eb;
@@ -161,4 +172,268 @@ footer {
 .container > img:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
+}
+/* Poetry & Recitation */
+#recitation {
+    background: linear-gradient(135deg, #fdf2f8, #eef2ff);
+    border: 1px solid #e9d5ff;
+    position: relative;
+    overflow: hidden;
+}
+
+#recitation h2 {
+    color: #7e22ce;
+}
+
+#recitation p {
+    color: #4b5563;
+}
+
+#recitation a {
+    display: inline-block;
+    background: linear-gradient(135deg, #7e22ce, #db2777);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(126, 34, 206, 0.2);
+}
+
+#recitation a:hover {
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(126, 34, 206, 0.3);
+}
+/* Card accent */
+#about {
+    border-left: 5px solid #6366f1;
+}
+
+#skills {
+    border-left: 5px solid #8b5cf6;
+}
+
+#projects {
+    border-left: 5px solid #ec4899;
+}
+
+#contact {
+    border-left: 5px solid #06b6d4;
+}
+/* Recitation decorative style */
+#recitation {
+    text-align: center;
+    padding: 35px;
+}
+
+#recitation h2 {
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+#recitation p {
+    max-width: 700px;
+    margin: 12px auto;
+}
+
+#recitation a {
+    margin-top: 10px;
+    padding: 12px 24px;
+    border-radius: 30px;
+    letter-spacing: 0.3px;
+}
+/* Skill pills */
+#skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+#skills li {
+    background: linear-gradient(135deg, #eef2ff, #f3e8ff);
+    color: #5b21b6;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-weight: 500;
+    border: 1px solid #ddd6fe;
+    transition: all 0.3s ease;
+}
+
+#skills li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(126, 34, 206, 0.18);
+}
+/* Project styling */
+.project-item {
+    background: linear-gradient(135deg, #f8fafc, #fdf4ff);
+    padding: 22px;
+    border-radius: 15px;
+    border: 1px solid #e9d5ff;
+    margin-top: 15px;
+}
+
+.project-item h3 {
+    color: #6d28d9;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    line-height: 1.7;
+    color: #4b5563;
+}
+
+.project-tag {
+    display: inline-block;
+    background: #ede9fe;
+    color: #6d28d9;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin: 5px 5px 0 0;
+    font-weight: 500;
+}
+/* Contact section */
+#contact {
+    background: linear-gradient(135deg, #ecfeff, #eef2ff);
+}
+
+#contact a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#contact a:hover {
+    color: #7e22ce;
+}
+/* Currently learning */
+.currently {
+    text-align: center;
+    color: #6d28d9 !important;
+    font-size: 15px !important;
+    font-weight: 500;
+    margin-top: 5px;
+}
+/* Interest cards */
+.interests {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.interest {
+    background: rgba(255, 255, 255, 0.75);
+    padding: 20px;
+    border-radius: 18px;
+    text-align: center;
+    border: 1px solid #e9d5ff;
+    transition: all 0.3s ease;
+}
+
+.interest span {
+    font-size: 30px;
+}
+
+.interest h3 {
+    color: #6d28d9;
+    margin: 10px 0 5px;
+}
+
+.interest p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+.interest:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(126, 34, 206, 0.15);
+}
+@media (max-width: 600px) {
+    .interests {
+        grid-template-columns: 1fr;
+    }
+}
+/* Floating animation */
+@keyframes floatCard {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-4px);
+    }
+}
+
+.interest {
+    animation: floatCard 4s ease-in-out infinite;
+}
+
+.interest:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.interest:nth-child(3) {
+    animation-delay: 1s;
+}
+/* Journey section */
+#journey {
+    background: linear-gradient(135deg, #f5f3ff, #fdf2f8);
+}
+
+#journey h2 {
+    color: #6d28d9;
+}
+
+.journey-item {
+    border-left: 3px solid #8b5cf6;
+    padding: 5px 0 5px 20px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.journey-item::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #8b5cf6;
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+    top: 10px;
+}
+
+.journey-item h3 {
+    color: #4c1d95;
+    margin: 0 0 6px;
+}
+
+.journey-item p {
+    margin: 0;
+    color: #555;
+    line-height: 1.6;
+}
+/* Back to top button */
+.back-to-top {
+    display: block;
+    width: fit-content;
+    margin: 25px auto 10px;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #6366f1, #a855f7);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(99, 102, 241, 0.2);
+}
+
+.back-to-top:hover {
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 15px rgba(99, 102, 241, 0.3);
 }
